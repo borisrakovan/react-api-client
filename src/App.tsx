@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+import CustomerApiClient from './components/CustomerApiClient'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<header className="App-header">
+				<h1>Customer API</h1>
+				<p>This React UI allows you to interact with a basic Customer API build in ASP.NET Core, demonstrating the usage of Express Gateway.</p>
+			</header>
+			<main className="content">
+				<CustomerApiClient />
+			</main>
+			<footer></footer>
+		</div>
+	);
 }
 
 export default App;
